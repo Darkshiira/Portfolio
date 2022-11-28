@@ -1,0 +1,530 @@
+body {
+  margin: 0;
+  background-color: rgb(97, 97, 97);
+}
+body.stars {
+  background-image: url("https://images.unsplash.com/photo-1622793139910-e261be0b30a4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTR8fHN0YXJyeSUyMHNreXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60");
+  font-family: "Roboto", sans-serif;
+}
+body.marmour {
+  background-image: url("https://images.unsplash.com/photo-1585314062340-f1a5a7c9328d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8NTR8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60");
+  font-family: "ubuntu", sans-serif;
+}
+body.leaf {
+  background: radial-gradient(ellipse at center, #a3d7d3 0%, #78a9a7 50%, #5c746c 100%);
+  font-family: "dosis", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+header {
+  color: rgb(223, 223, 223);
+  position: fixed;
+  width: 100%;
+  z-index: 2;
+}
+header.stars {
+  background-color: #13063a;
+}
+header.marmour {
+  background-color: black;
+}
+header.leaf {
+  background: #215749;
+}
+header nav ul {
+  padding-left: 0;
+}
+header nav ul .siteLinks {
+  color: rgb(223, 223, 223);
+}
+header .content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+header .content .linksSection {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+header .content .linksSection .links {
+  padding: 0.5rem;
+}
+header .content .linksSection a {
+  color: rgb(223, 223, 223);
+}
+header hr {
+  position: absolute;
+  top: 7.5rem;
+  width: 100%;
+  color: rgb(244, 247, 186);
+}
+header .circle {
+  border-radius: 50%;
+  position: absolute;
+  width: 4rem;
+  height: 4rem;
+  top: 6rem;
+  right: 7rem;
+}
+header .circle.stars {
+  background: radial-gradient(ellipse at center, #F4F7BA 0%, #E7EAB0 50%, #CE5937 100%);
+}
+header .circle.marmour {
+  background: url("https://img.freepik.com/free-vector/digital-white-background-with-binary-code-numbers_1017-25335.jpg?w=900&t=st=1668977192~exp=1668977792~hmac=5eafc2782330d915f72aef187d421e3e0e0bdccbd4166052a8b4dbbc8f149e38");
+}
+header .circle.leaf {
+  background: url("https://images.unsplash.com/photo-1506477331477-33d5d8b3dc85?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OXx8c2VhfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60");
+}
+header .circleSmall {
+  border-radius: 50%;
+  position: absolute;
+  z-index: 1;
+  width: 1rem;
+  height: 1rem;
+}
+header .circleSmall.stars {
+  background-color: rgb(72, 49, 49);
+}
+header .circleSmall.marmour {
+  background-color: black;
+}
+header .circleSmall.leaf {
+  background: #215749;
+}
+
+main .aboutMe {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 10rem;
+  color: rgb(223, 223, 223);
+}
+main .aboutMe .container {
+  position: relative;
+}
+main .aboutMe .container .halfCircle {
+  left: -30rem;
+  height: 20rem;
+  box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0);
+  border: 1px solid white;
+}
+main .aboutMe .container .halfCircle.stars {
+  background-color: #13063a;
+  border-radius: 50%;
+  position: absolute;
+  width: 60rem;
+}
+main .aboutMe .container .halfCircle.marmour {
+  background-color: black;
+  border-radius: 5%;
+  position: absolute;
+  width: 50rem;
+}
+main .aboutMe .container .halfCircle.leaf {
+  background-color: #022702;
+  border-radius: 50%;
+  position: absolute;
+  width: 60rem;
+  background: #215749;
+}
+main .aboutMe .container .halfCircle img {
+  border-radius: 50%;
+  position: absolute;
+  left: 35rem;
+  top: 3.5rem;
+  box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0);
+  border: #000000 1px solid;
+}
+@media (max-width: 800px) {
+  main .aboutMe .container .halfCircle img {
+    left: 25rem;
+  }
+}
+@media (max-width: 1200px) {
+  main .aboutMe .container .halfCircle {
+    top: 3rem;
+  }
+}
+@media (max-width: 1000px) {
+  main .aboutMe .container .halfCircle {
+    top: 8rem;
+  }
+}
+@media (max-width: 800px) {
+  main .aboutMe .container .halfCircle {
+    top: 8rem;
+  }
+}
+main .aboutMe .experience-container {
+  margin-top: 150px;
+}
+main .aboutMe .timeline-container {
+  display: flex;
+  flex-direction: row;
+}
+main .aboutMe .timeline-container .circleCard {
+  padding: 1rem;
+  height: 150px;
+  width: 150px;
+  text-align: center;
+  box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0);
+}
+main .aboutMe .timeline-container .circleCard.stars {
+  background: radial-gradient(ellipse at center, #F4F7BA 0%, #E7EAB0 50%, #CE5937 100%);
+  color: black;
+  border-radius: 50%;
+  border: 2px solid black;
+}
+main .aboutMe .timeline-container .circleCard.marmour {
+  background: black;
+  color: white;
+  border-radius: 5%;
+  border: 2px solid white;
+}
+main .aboutMe .timeline-container .circleCard.leaf {
+  background: #215749;
+  color: white;
+  border-radius: 5%;
+  border: 2px solid white;
+}
+main .aboutMe .timeline-container .circleCard i {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+main .aboutMe .timeline-container .timeline-line {
+  margin-top: 75px;
+  border-top: 2px solid white;
+  width: 20px;
+  height: 8px;
+}
+@media (max-width: 800px) {
+  main .aboutMe .timeline-container .timeline-line {
+    display: none;
+  }
+}
+@media (max-width: 800px) {
+  main .aboutMe .timeline-container {
+    flex-direction: column;
+    padding-top: 8rem;
+  }
+}
+@media (max-width: 800px) {
+  main .aboutMe {
+    padding-top: 12rem;
+    flex-direction: column;
+  }
+}
+main .coding-languages {
+  margin: 20rem 0;
+  position: relative;
+}
+main .coding-languages .black-rectangle {
+  width: 100%;
+  height: 10em;
+  margin-top: 25em;
+  box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0);
+  border-top: 1px solid white;
+  border-bottom: 1px solid white;
+}
+main .coding-languages .black-rectangle.stars {
+  background-color: #13063a;
+}
+main .coding-languages .black-rectangle.marmour {
+  background-color: black;
+}
+main .coding-languages .black-rectangle.leaf {
+  background-color: #215749;
+}
+main .coding-languages .black-circle {
+  border-radius: 50%;
+  position: absolute;
+  z-index: 1;
+  top: -15em;
+  right: 0;
+  width: 50em;
+  height: 35em;
+  box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0);
+  text-align: center;
+  padding-top: 7em;
+  color: rgb(223, 223, 223);
+  border-top: 1px solid white;
+  border-bottom: 1px solid white;
+}
+main .coding-languages .black-circle.stars {
+  background-color: #13063a;
+}
+main .coding-languages .black-circle.marmour {
+  background-color: black;
+}
+main .coding-languages .black-circle.leaf {
+  background-color: #215749;
+}
+main .coding-languages .black-circle i {
+  font-size: 3rem;
+  margin-bottom: 2.5rem;
+}
+@media (max-width: 500px) {
+  main .coding-languages .black-circle i {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+  }
+}
+@media (max-width: 900px) {
+  main .coding-languages .black-circle {
+    top: -10em;
+    width: 30em;
+    height: 20em;
+    padding-top: 5em;
+  }
+}
+@media (max-width: 500px) {
+  main .coding-languages .black-circle {
+    top: -5em;
+    width: 20em;
+    height: 15em;
+    padding-top: 3em;
+  }
+}
+main .coding-languages .white-circle {
+  border-radius: 50%;
+  position: absolute;
+  top: -7.5em;
+  right: 15em;
+  width: 25em;
+  height: 17em;
+  box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0);
+  text-align: justify;
+  justify-content: center;
+  padding-top: 5em;
+  color: rgb(223, 223, 223);
+  border-top: 1px solid white;
+  border-bottom: 1px solid white;
+}
+main .coding-languages .white-circle.stars {
+  background: radial-gradient(ellipse at center, #F4F7BA 0%, #E7EAB0 50%, #CE5937 100%);
+  color: black;
+}
+main .coding-languages .white-circle.marmour {
+  background: url("https://img.freepik.com/free-vector/white-digital-matrix-binary-code-numbers-background_1017-25332.jpg?w=900&t=st=1668974245~exp=1668974845~hmac=b5943ee2c25c05c80c61b477b68db3637243c835400287448277d8412cf5124e");
+  color: black;
+}
+main .coding-languages .white-circle.leaf {
+  background: url("https://img.freepik.com/free-vector/green-data-technology-background-with-binary-code_53876-119581.jpg?w=900&t=st=1668976416~exp=1668977016~hmac=d184a8cc0354924f4759524ad160fc849201473e7750ab35daa8d6b63ef269f3");
+  color: white;
+}
+main .coding-languages .white-circle h3 {
+  padding-left: 5.5em;
+  width: 50%;
+}
+@media (max-width: 900px) {
+  main .coding-languages .white-circle {
+    top: -5em;
+    right: 10em;
+    width: 20em;
+    height: 15em;
+    padding-top: 3em;
+  }
+}
+@media (max-width: 500px) {
+  main .coding-languages .white-circle {
+    top: -2.5em;
+    right: 5em;
+    width: 15em;
+    height: 10em;
+    padding-top: 2em;
+  }
+}
+main .file-section {
+  margin: 30rem 0;
+}
+main .file-section .files {
+  flex-direction: row;
+  display: flex;
+  justify-content: start;
+  gap: 2px;
+}
+main .file-section .file {
+  width: 4rem;
+  height: 2rem;
+  box-shadow: 10px 0px 13px -7px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0);
+  cursor: pointer;
+}
+main .file-section #file1 {
+  background-color: crimson;
+}
+main .file-section #file2 {
+  background-color: darkorange;
+}
+main .file-section #file3 {
+  background-color: darkgreen;
+}
+main .file-section #file4 {
+  background-color: darkblue;
+}
+main .file-section #file5 {
+  background-color: darkviolet;
+}
+main .file-section #file6 {
+  background-color: darkred;
+}
+main .file-section .file-rectangle {
+  background-color: #13063a;
+  width: 90em;
+  height: 30em;
+  margin-top: 0;
+  border-radius: 0 5px 0 0;
+  box-shadow: 7px -5px 10px 0px #ffffff, 11px -9px 10px 0px #bcbcbc, 16px -14px 10px 0px #adaead, 20px -17px 10px 0px #6d6d6d, 24px -19px 10px 0px #565555, 27px -23px 10px 0px #242323, -50px -50px 0px -17px rgba(0, 0, 0, 0);
+}
+main .file-section .file-rectangle.stars {
+  background-color: #13063a;
+}
+main .file-section .file-rectangle.marmour {
+  background-color: black;
+}
+main .file-section .file-rectangle.leaf {
+  background-color: #215749;
+}
+main .file-section .file-rectangle .file-rectangle-entry {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+main .file-section .file-rectangle .file-rectangle-entry img {
+  width: 50%;
+  margin: 40px;
+}
+main .file-section .file-rectangle .file-rectangle-entry .file-project-information {
+  width: 50%;
+  margin: 40px;
+  color: rgb(223, 223, 223);
+}
+main .file-section .file-rectangle .file-rectangle-entry .file-project-information i {
+  color: rgb(244, 247, 186);
+  font-size: larger;
+}
+main .file-section .interests {
+  position: relative;
+}
+main .file-section .interests .black-rectangle {
+  width: 100%;
+  height: 10em;
+  margin-top: 25em;
+  box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0);
+  border-top: 1px solid white;
+  border-bottom: 1px solid white;
+}
+main .file-section .interests .black-rectangle.stars {
+  background-color: #13063a;
+}
+main .file-section .interests .black-rectangle.marmour {
+  background-color: black;
+}
+main .file-section .interests .black-rectangle.leaf {
+  background-color: #215749;
+}
+main .file-section .interests .black-circle {
+  border-radius: 50%;
+  position: absolute;
+  z-index: 1;
+  top: -20em;
+  left: 0;
+  width: 50em;
+  height: 35em;
+  box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0);
+  text-align: center;
+  padding-top: 7em;
+  color: rgb(223, 223, 223);
+  border-top: 1px solid white;
+  border-bottom: 1px solid white;
+}
+main .file-section .interests .black-circle.stars {
+  background-color: #13063a;
+}
+main .file-section .interests .black-circle.marmour {
+  background-color: black;
+}
+main .file-section .interests .black-circle.leaf {
+  background-color: #215749;
+}
+main .file-section .interests .black-circle i {
+  font-size: 3rem;
+  margin-bottom: 2.5rem;
+}
+@media (max-width: 900px) {
+  main .file-section .interests .black-circle {
+    top: -10em;
+    width: 30em;
+    height: 20em;
+    padding-top: 5em;
+  }
+}
+main .file-section .interests .white-circle {
+  border-radius: 50%;
+  position: absolute;
+  top: -7.5em;
+  left: 15em;
+  width: 25em;
+  height: 17em;
+  box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0);
+  text-align: justify;
+  justify-content: center;
+  padding-top: 5em;
+  color: rgb(223, 223, 223);
+  border-top: 1px solid white;
+  border-bottom: 1px solid white;
+}
+main .file-section .interests .white-circle.stars {
+  background: radial-gradient(ellipse at center, #F4F7BA 0%, #E7EAB0 50%, #CE5937 100%);
+  color: black;
+}
+main .file-section .interests .white-circle.marmour {
+  background: url("https://images.unsplash.com/photo-1448375240586-882707db888b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8Zm9yZXN0fGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60");
+  color: white;
+}
+main .file-section .interests .white-circle.leaf {
+  background: url("https://images.unsplash.com/photo-1514735555661-d3278da9d5ca?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NTB8fGZvcmVzdHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60");
+  color: white;
+}
+main .file-section .interests .white-circle h3 {
+  padding-left: 5.5em;
+  width: 50%;
+}
+@media (max-width: 900px) {
+  main .file-section .interests .white-circle {
+    top: -5em;
+    right: 10em;
+    width: 20em;
+    height: 15em;
+    padding-top: 3em;
+  }
+}
+
+footer {
+  color: rgb(223, 223, 223);
+  text-align: center;
+  box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0);
+  border-top: 1px solid white;
+  border-bottom: 1px solid white;
+}
+footer.stars {
+  background-color: #13063a;
+}
+footer.marmour {
+  background-color: black;
+}
+footer.leaf {
+  background-color: #215749;
+}
+
+/*# sourceMappingURL=styles.css.map */

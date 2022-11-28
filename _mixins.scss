@@ -1,0 +1,15 @@
+// layouts
+
+@mixin flexLayout{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+@mixin circleDiv {
+    border-radius: 50%;
+
+    position:absolute;
+}
