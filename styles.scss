@@ -500,6 +500,26 @@ main {
                     font-size:larger;
                 }
             }
+
+            @media (max-width: 900px) {
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+
+                img {
+                    width: 80%;
+                    margin: 0;
+                }
+
+                .file-project-information{
+                    width: 80%;
+                    margin: 0;
+                }
+
+                .file {
+                    width: 2rem;
+                }
+            }
         }
     }
 
@@ -563,6 +583,14 @@ main {
                 width: 30em;
                 height: 20em;
                 padding-top: 5em;
+                
+            }
+
+            @media (max-width: 500px) {
+                top: -5em;
+                width: 20em;
+                height: 15em;
+                padding-top: 3em;
             }
         }
 
@@ -607,6 +635,14 @@ main {
                 width: 20em;
                 height: 15em;
                 padding-top: 3em;
+            }
+
+            @media (max-width: 500px) {
+                top: -2.5em;
+                right: 5em;
+                width: 15em;
+                height: 10em;
+                padding-top: 2em;
             }
         }
 
