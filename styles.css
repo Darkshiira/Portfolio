@@ -380,7 +380,7 @@ main .file-section #file6 {
 }
 main .file-section .file-rectangle {
   background-color: #13063a;
-  width: 90em;
+  width: 90%;
   height: 30em;
   margin-top: 0;
   border-radius: 0 5px 0 0;
@@ -412,6 +412,24 @@ main .file-section .file-rectangle .file-rectangle-entry .file-project-informati
 main .file-section .file-rectangle .file-rectangle-entry .file-project-information i {
   color: rgb(244, 247, 186);
   font-size: larger;
+}
+@media (max-width: 900px) {
+  main .file-section .file-rectangle .file-rectangle-entry {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  main .file-section .file-rectangle .file-rectangle-entry img {
+    width: 80%;
+    margin: 0;
+  }
+  main .file-section .file-rectangle .file-rectangle-entry .file-project-information {
+    width: 80%;
+    margin: 0;
+  }
+  main .file-section .file-rectangle .file-rectangle-entry .file {
+    width: 2rem;
+  }
 }
 main .file-section .interests {
   position: relative;
@@ -469,6 +487,14 @@ main .file-section .interests .black-circle i {
     padding-top: 5em;
   }
 }
+@media (max-width: 500px) {
+  main .file-section .interests .black-circle {
+    top: -5em;
+    width: 20em;
+    height: 15em;
+    padding-top: 3em;
+  }
+}
 main .file-section .interests .white-circle {
   border-radius: 50%;
   position: absolute;
@@ -507,6 +533,15 @@ main .file-section .interests .white-circle h3 {
     width: 20em;
     height: 15em;
     padding-top: 3em;
+  }
+}
+@media (max-width: 500px) {
+  main .file-section .interests .white-circle {
+    top: -2.5em;
+    right: 5em;
+    width: 15em;
+    height: 10em;
+    padding-top: 2em;
   }
 }
 
