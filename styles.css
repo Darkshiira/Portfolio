@@ -165,12 +165,28 @@ main .aboutMe .container .halfCircle.marmour {
   position: absolute;
   width: 50rem;
 }
+@media (max-width: 900px) {
+  main .aboutMe .container .halfCircle.marmour {
+    width: 30rem;
+  }
+  main .aboutMe .container .halfCircle.marmour img {
+    left: 15rem;
+  }
+}
 main .aboutMe .container .halfCircle.leaf {
   background-color: #022702;
   border-radius: 50%;
   position: absolute;
   width: 60rem;
   background: #215749;
+}
+@media (max-width: 900px) {
+  main .aboutMe .container .halfCircle.leaf {
+    width: 30rem;
+  }
+  main .aboutMe .container .halfCircle.leaf img {
+    left: 15rem;
+  }
 }
 main .aboutMe .container .halfCircle img {
   border-radius: 50%;
@@ -211,6 +227,11 @@ main .aboutMe .experience-container {
 main .aboutMe .timeline-container {
   display: flex;
   flex-direction: row;
+}
+@media (max-width: 800px) {
+  main .aboutMe .timeline-container {
+    margin-top: 20rem;
+  }
 }
 main .aboutMe .timeline-container .circleCard {
   padding: 1rem;
