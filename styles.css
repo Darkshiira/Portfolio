@@ -62,6 +62,11 @@ header .content .linksSection .links {
 header .content .linksSection a {
   color: rgb(223, 223, 223);
 }
+@media (max-width: 900px) {
+  header .content {
+    flex-direction: column;
+  }
+}
 header hr {
   position: absolute;
   top: 7.5rem;
@@ -106,6 +111,7 @@ main .aboutMe {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: center;
   align-items: center;
   padding-top: 10rem;
   color: rgb(223, 223, 223);
@@ -159,6 +165,7 @@ main .aboutMe .container .halfCircle img {
 @media (max-width: 1000px) {
   main .aboutMe .container .halfCircle {
     top: 8rem;
+    width: 50%;
   }
 }
 @media (max-width: 800px) {
@@ -230,7 +237,7 @@ main .coding-languages {
   position: relative;
 }
 main .coding-languages .black-rectangle {
-  width: 100%;
+  width: 200%;
   height: 10em;
   margin-top: 25em;
   box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0);
@@ -355,7 +362,7 @@ main .file-section .files {
   gap: 2px;
 }
 main .file-section .file {
-  width: 4rem;
+  width: 2rem;
   height: 2rem;
   box-shadow: 10px 0px 13px -7px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0);
   cursor: pointer;
@@ -380,7 +387,7 @@ main .file-section #file6 {
 }
 main .file-section .file-rectangle {
   background-color: #13063a;
-  width: 90%;
+  width: 190%;
   height: 30em;
   margin-top: 0;
   border-radius: 0 5px 0 0;
@@ -435,7 +442,7 @@ main .file-section .interests {
   position: relative;
 }
 main .file-section .interests .black-rectangle {
-  width: 100%;
+  width: 200%;
   height: 10em;
   margin-top: 25em;
   box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0);
@@ -529,7 +536,7 @@ main .file-section .interests .white-circle h3 {
 @media (max-width: 900px) {
   main .file-section .interests .white-circle {
     top: -5em;
-    right: 10em;
+    left: 10em;
     width: 20em;
     height: 15em;
     padding-top: 3em;
@@ -538,7 +545,7 @@ main .file-section .interests .white-circle h3 {
 @media (max-width: 500px) {
   main .file-section .interests .white-circle {
     top: -2.5em;
-    right: 5em;
+    left: 5em;
     width: 15em;
     height: 10em;
     padding-top: 2em;
@@ -548,6 +555,7 @@ main .file-section .interests .white-circle h3 {
 footer {
   color: rgb(223, 223, 223);
   text-align: center;
+  width: 200%;
   box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0);
   border-top: 1px solid white;
   border-bottom: 1px solid white;
