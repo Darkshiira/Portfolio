@@ -59,6 +59,9 @@ header {
                 color: v.$font-color;
             }
         }
+        @media (max-width: 900px) {
+            display:none;
+        }
         
     }
 
@@ -67,6 +70,7 @@ header {
 
         .linksSection {
             @include m.flexLayout;
+
 
             .links {
                 padding: 0.5rem;
@@ -88,6 +92,10 @@ header {
         width: 100%;
         color: v.$shining-color;
        
+        @media (max-width: 900px)
+            {
+               display:none;
+            }
 
     }
 
@@ -110,6 +118,10 @@ header {
         &.leaf {
             background: url("https://images.unsplash.com/photo-1506477331477-33d5d8b3dc85?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OXx8c2VhfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60");        }
         
+            @media (max-width: 900px)
+            {
+               display:none;
+            }
     }
 
     .circleSmall {
@@ -131,25 +143,14 @@ header {
         &.leaf {
             background: #215749;
         }
-    }
 
-    
-    // .light {
-        // background-color: v.$shining-color;
-        // width: 1rem;
-        // height: 1rem;
-        // .light  {
-    //         background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIxMDAlIiB5Mj0iMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjE2JSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjQ4JSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIgc3RvcC1vcGFjaXR5PSIwLjcyIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNmZmZmZmYiIHN0b3Atb3BhY2l0eT0iMCIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
-    //       background: linear-gradient(to right,  rgba(255,255,255,1) 0%,rgba(255,255,255,1) 16%,rgba(255,255,255,0.72) 48%,rgba(255,255,255,0) 100%);
-    //       filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#00ffffff',GradientType=1 );
-          
-    //         width:100%;
-    //         height:100%;
-    //         transform:rotatey(-12deg);
-    //         border-radius:5000px 5px 5px 5000px;
-    //       }
-          
+        @media (max-width: 900px)
+            {
+               display:none;
+            }
     }
+          
+}
     
 
 
@@ -176,6 +177,15 @@ main {
                     background-color: v.$body-background;
                     @include m.circleDiv;
                     width: 60rem;
+
+                    @media (max-width: 900px)
+                    {
+                        width: 30rem;
+
+                        img {
+                            left: 15rem;
+                        }
+                    }
                 }
 
                 &.marmour{
@@ -212,16 +222,24 @@ main {
 
                 @media (max-width: 1000px) {
                     top:8rem;
-                    width: 50%;
+                    
                 }
 
                 @media (max-width: 800px) {
                     top: 8rem;
+                    
+                    
                 }
             }
         }
         .experience-container{
             margin-top: 150px;
+
+            @media (max-width: 900px) {
+               h2 {
+                display:none;
+               }
+            }
 
         }
 
@@ -264,7 +282,7 @@ main {
                 }
 
                 @media (max-width: 800px) {
-
+            
                 }
             }
 
@@ -298,7 +316,7 @@ main {
 
         .black-rectangle {
             
-            width:200%;
+            width:100%;
             height: 10em;
             margin-top: 25em;
             box-shadow: v.$box-shadow;
@@ -359,6 +377,10 @@ main {
                 width: 30em;
                 height: 20em;
                 padding-top: 5em;
+
+                h3 {
+                    font-size:smaller;
+                }
             }
 
             @media (max-width: 500px) {
@@ -411,6 +433,10 @@ main {
                 width: 20em;
                 height: 15em;
                 padding-top: 3em;
+
+                h3 {
+                    font-size:smaller;
+                }
             }
 
             @media (max-width: 500px) {
@@ -469,7 +495,7 @@ main {
 
         .file-rectangle {
             background-color: v.$body-background;
-            width:190%;
+            width:90%;
             height: 30em;
             margin-top: 0;
             border-radius:0 5px 0 0;
@@ -535,7 +561,7 @@ main {
         position:relative;
 
         .black-rectangle {
-            width:200%;
+            width:100%;
             height: 10em;
             margin-top: 25em;
             box-shadow: v.$box-shadow;
@@ -599,6 +625,15 @@ main {
                 width: 20em;
                 height: 15em;
                 padding-top: 3em;
+
+                h3 {
+                    font-size:smaller;
+                }
+
+                i {
+                    font-size: 2rem;
+                    margin-bottom: 0.5rem;
+                }
             }
         }
 
@@ -651,6 +686,10 @@ main {
                 width: 15em;
                 height: 10em;
                 padding-top: 2em;
+                text-align:start;
+                 h3 {
+                    font-size:smaller;
+                 }
             }
         }
 
@@ -662,7 +701,7 @@ main {
 footer {
     color: v.$font-color;
     text-align: center;
-    width:200%;
+    width:100%;
 
     box-shadow: v.$box-shadow;
     border-top: 1px solid white;
