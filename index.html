@@ -279,20 +279,51 @@
     $("#file1").click(function(){
         $(".file-project-information").html("<h3>Projekt 1</h3><h4>Min examinationsuppgift i SCSS</h4><p>Här har vi fått skapa en eventsida med landingpage, eventsida, detailed eventsida, form och about us-sida, utan koppling till backend.</p><a></a>");
         $(".file-rectangle-entry:first-child img").attr("src","./media/Project1.png");
-        $(".file-rectangle-entry:first-child a").attr("href","https://github.com/Darkshiira/Examinationsuppgift---Frontend2---HTML-CSS");
-        $(".file-rectangle-entry:first-child a").html("<i></i>");
-        $(".file-rectangle-entry:first-child a i").addClass("fa-brands");
-        $(".file-rectangle-entry:first-child a i").addClass("fa-github");
-        console.log($(".file-rectangle-entry:first-child a i"));
+        $(".file-rectangle-entry a").attr("href","https://github.com/Darkshiira/Examinationsuppgift---Frontend2---HTML-CSS");
+        $(".file-rectangle-entry a").html("<i></i>");
+        $(".file-rectangle-entry a i").addClass("fa-brands");
+        $(".file-rectangle-entry a i").addClass("fa-github");
     });
 
     $("#file2").click(function(){
         $(".file-project-information").html("<h3>Projekt 2</h3><h4>Sido-uppgift</h4><p>En uppgift att försöka efterlikna instagram med hjälp av CSS, utan backendkoppling</p><a></a>");
         $(".file-rectangle-entry:first-child img").attr("src","./media/Project2.png");
-        $(".file-rectangle-entry:first-child a").attr("href","https://github.com/Darkshiira/Puppygram");
-        $(".file-rectangle-entry:first-child a").html("<i></i>");
-        $(".file-rectangle-entry:first-child a i").addClass("fa-brands");
-        $(".file-rectangle-entry:first-child a i").addClass("fa-github");
+        $(".file-rectangle-entry a").attr("href","https://github.com/Darkshiira/Puppygram");
+        $(".file-rectangle-entry a").html("<i></i>");
+        $(".file-rectangle-entry a i").addClass("fa-brands");
+        $(".file-rectangle-entry a i").addClass("fa-github");
+    });
+
+    $("#file3").click(function(){
+        $(".file-project-information").html(`<h3>Projekt 3</h3><h4>Sido-uppgift</h4><p>Ett antal appar gjorda i React, där jag övar på syntaxen i React, State's och att fetcha API</p><a></a>`);
+        $(".file-rectangle-entry img").attr("src","./media/Project3.png");
+        $(".file-rectangle-entry a").attr("href","https://github.com/Darkshiira/Calculator");
+        $(".file-rectangle-entry a").html("<i></i>");
+        $(".file-rectangle-entry a i").addClass("fa-brands");
+        $(".file-rectangle-entry a i").addClass("fa-github");
+        $("<a><a/>").appendTo($(".file-rectangle-entry p"));
+        $(".file-rectangle-entry a:last").attr("href","https://darkshiira.github.io/Calculator/");
+        $("<i></i>").appendTo(".file-rectangle-entry a:last");
+        $(".file-rectangle-entry a:last i").addClass("fa-briefcase");
+        $(".file-rectangle-entry a:last i").addClass("fa-solid");
+        (console.log($(".file-rectangle-entry a:first i" )));
+
+    });
+
+    $("#file4").click(function(){
+        $(".file-project-information").html("<h3>Projekt 4</h3><h4>Min examinationsuppgift i React</h4><p>Här har jag övat på att fetcha API:er och använda mig av React Routes</p><a></a>");
+        $(".file-rectangle-entry img").attr("src","./media/Project4.png");
+        $(".file-rectangle-entry a").attr("href","https://darkshiira.github.io/dogs/");
+        $(".file-rectangle-entry a").html("<i></i>");
+        $(".file-rectangle-entry a i").addClass("fa-github");
+        $(".file-rectangle-entry a i").addClass("fa-brands");
+        $("<a><a/>").appendTo($(".file-rectangle-entry p"));
+        $(".file-rectangle-entry a:last").attr("href","https://darkshiira.github.io/dogs/");
+        $("<i></i>").appendTo(".file-rectangle-entry a:last");
+        $(".file-rectangle-entry a:last i").addClass("fa-briefcase");
+        $(".file-rectangle-entry a:last i").addClass("fa-solid");
+        (console.log($(".file-rectangle-entry a:first i" )));
+       
     });
 
     $(".black-rectangle").mousemove(function(){
