@@ -44,6 +44,11 @@ header nav ul {
 header nav ul .siteLinks {
   color: rgb(223, 223, 223);
 }
+@media (max-width: 900px) {
+  header nav {
+    display: none;
+  }
+}
 header .content {
   display: flex;
   flex-direction: row;
@@ -62,11 +67,21 @@ header .content .linksSection .links {
 header .content .linksSection a {
   color: rgb(223, 223, 223);
 }
+@media (max-width: 900px) {
+  header .content {
+    flex-direction: column;
+  }
+}
 header hr {
   position: absolute;
   top: 7.5rem;
   width: 100%;
   color: rgb(244, 247, 186);
+}
+@media (max-width: 900px) {
+  header hr {
+    display: none;
+  }
 }
 header .circle {
   border-radius: 50%;
@@ -85,6 +100,11 @@ header .circle.marmour {
 header .circle.leaf {
   background: url("https://images.unsplash.com/photo-1506477331477-33d5d8b3dc85?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OXx8c2VhfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60");
 }
+@media (max-width: 900px) {
+  header .circle {
+    display: none;
+  }
+}
 header .circleSmall {
   border-radius: 50%;
   position: absolute;
@@ -101,11 +121,17 @@ header .circleSmall.marmour {
 header .circleSmall.leaf {
   background: #215749;
 }
+@media (max-width: 900px) {
+  header .circleSmall {
+    display: none;
+  }
+}
 
 main .aboutMe {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: center;
   align-items: center;
   padding-top: 10rem;
   color: rgb(223, 223, 223);
@@ -125,11 +151,27 @@ main .aboutMe .container .halfCircle.stars {
   position: absolute;
   width: 60rem;
 }
+@media (max-width: 900px) {
+  main .aboutMe .container .halfCircle.stars {
+    width: 30rem;
+  }
+  main .aboutMe .container .halfCircle.stars img {
+    left: 15rem;
+  }
+}
 main .aboutMe .container .halfCircle.marmour {
   background-color: black;
   border-radius: 5%;
   position: absolute;
   width: 50rem;
+}
+@media (max-width: 900px) {
+  main .aboutMe .container .halfCircle.marmour {
+    width: 30rem;
+  }
+  main .aboutMe .container .halfCircle.marmour img {
+    left: 15rem;
+  }
 }
 main .aboutMe .container .halfCircle.leaf {
   background-color: #022702;
@@ -137,6 +179,14 @@ main .aboutMe .container .halfCircle.leaf {
   position: absolute;
   width: 60rem;
   background: #215749;
+}
+@media (max-width: 900px) {
+  main .aboutMe .container .halfCircle.leaf {
+    width: 30rem;
+  }
+  main .aboutMe .container .halfCircle.leaf img {
+    left: 15rem;
+  }
 }
 main .aboutMe .container .halfCircle img {
   border-radius: 50%;
@@ -169,9 +219,19 @@ main .aboutMe .container .halfCircle img {
 main .aboutMe .experience-container {
   margin-top: 150px;
 }
+@media (max-width: 900px) {
+  main .aboutMe .experience-container h2 {
+    display: none;
+  }
+}
 main .aboutMe .timeline-container {
   display: flex;
   flex-direction: row;
+}
+@media (max-width: 800px) {
+  main .aboutMe .timeline-container {
+    margin-top: 20rem;
+  }
 }
 main .aboutMe .timeline-container .circleCard {
   padding: 1rem;
@@ -287,6 +347,9 @@ main .coding-languages .black-circle i {
     height: 20em;
     padding-top: 5em;
   }
+  main .coding-languages .black-circle h3 {
+    font-size: smaller;
+  }
 }
 @media (max-width: 500px) {
   main .coding-languages .black-circle {
@@ -335,6 +398,9 @@ main .coding-languages .white-circle h3 {
     height: 15em;
     padding-top: 3em;
   }
+  main .coding-languages .white-circle h3 {
+    font-size: smaller;
+  }
 }
 @media (max-width: 500px) {
   main .coding-languages .white-circle {
@@ -355,7 +421,7 @@ main .file-section .files {
   gap: 2px;
 }
 main .file-section .file {
-  width: 4rem;
+  width: 2rem;
   height: 2rem;
   box-shadow: 10px 0px 13px -7px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0);
   cursor: pointer;
@@ -380,7 +446,7 @@ main .file-section #file6 {
 }
 main .file-section .file-rectangle {
   background-color: #13063a;
-  width: 90em;
+  width: 90%;
   height: 30em;
   margin-top: 0;
   border-radius: 0 5px 0 0;
@@ -412,6 +478,24 @@ main .file-section .file-rectangle .file-rectangle-entry .file-project-informati
 main .file-section .file-rectangle .file-rectangle-entry .file-project-information i {
   color: rgb(244, 247, 186);
   font-size: larger;
+}
+@media (max-width: 900px) {
+  main .file-section .file-rectangle .file-rectangle-entry {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  main .file-section .file-rectangle .file-rectangle-entry img {
+    width: 80%;
+    margin: 0;
+  }
+  main .file-section .file-rectangle .file-rectangle-entry .file-project-information {
+    width: 80%;
+    margin: 0;
+  }
+  main .file-section .file-rectangle .file-rectangle-entry .file {
+    width: 2rem;
+  }
 }
 main .file-section .interests {
   position: relative;
@@ -469,6 +553,21 @@ main .file-section .interests .black-circle i {
     padding-top: 5em;
   }
 }
+@media (max-width: 500px) {
+  main .file-section .interests .black-circle {
+    top: -5em;
+    width: 20em;
+    height: 15em;
+    padding-top: 3em;
+  }
+  main .file-section .interests .black-circle h3 {
+    font-size: smaller;
+  }
+  main .file-section .interests .black-circle i {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+  }
+}
 main .file-section .interests .white-circle {
   border-radius: 50%;
   position: absolute;
@@ -503,16 +602,30 @@ main .file-section .interests .white-circle h3 {
 @media (max-width: 900px) {
   main .file-section .interests .white-circle {
     top: -5em;
-    right: 10em;
+    left: 10em;
     width: 20em;
     height: 15em;
     padding-top: 3em;
+  }
+}
+@media (max-width: 500px) {
+  main .file-section .interests .white-circle {
+    top: -2.5em;
+    left: 5em;
+    width: 15em;
+    height: 10em;
+    padding-top: 2em;
+    text-align: start;
+  }
+  main .file-section .interests .white-circle h3 {
+    font-size: smaller;
   }
 }
 
 footer {
   color: rgb(223, 223, 223);
   text-align: center;
+  width: 100%;
   box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0);
   border-top: 1px solid white;
   border-bottom: 1px solid white;
