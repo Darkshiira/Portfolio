@@ -323,8 +323,21 @@
         $("<i></i>").appendTo(".file-rectangle-entry a:last");
         $(".file-rectangle-entry a:last i").addClass("fa-briefcase");
         $(".file-rectangle-entry a:last i").addClass("fa-solid");
-        (console.log($(".file-rectangle-entry a:first i" )));
+    });
        
+    $("#file5").click(function(){
+        $(".file-project-information").html("<h3>Projekt 5</h3><h4>Projektarbetet i React</h4><p>Här var uppgiften att sortera, filtrera och lägga till data till en jsonserver.</p><a></a>");
+        $(".file-rectangle-entry img").attr("src","./media/Project5.png");
+        $(".file-rectangle-entry a").attr("href","https://github.com/Darkshiira/examinationsuppgift-react");
+        $(".file-rectangle-entry a").html("<i></i>");
+        $(".file-rectangle-entry a i").addClass("fa-github");
+        $(".file-rectangle-entry a i").addClass("fa-brands");
+        $("<a><a/>").appendTo($(".file-rectangle-entry p"));
+        $(".file-rectangle-entry a:last").attr("href","https://darkshiira.github.io/examinationsuppgift-react/");
+        $("<i></i>").appendTo(".file-rectangle-entry a:last");
+        $(".file-rectangle-entry a:last i").addClass("fa-briefcase");
+        $(".file-rectangle-entry a:last i").addClass("fa-solid");
+
     });
 
     $(".black-rectangle").mousemove(function(){
